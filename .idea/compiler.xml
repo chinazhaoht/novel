@@ -24,12 +24,18 @@
         <processorPath useClasspath="true" />
         <module name="hadoop" />
         <module name="image" />
+        <module name="wordcount-hadoop" />
+        <module name="wordcount-spark" />
+        <module name="wordcount-storm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hadoop" target="1.5" />
       <module name="image" target="1.5" />
       <module name="novel" target="1.5" />
+      <module name="wordcount-hadoop" target="1.5" />
+      <module name="wordcount-spark" target="1.5" />
+      <module name="wordcount-storm" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

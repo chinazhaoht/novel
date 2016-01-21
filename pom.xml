@@ -10,6 +10,8 @@
 	<modules>
 		<module>image</module>
 		<module>hadoop</module>
+		<module>wordcount-storm</module>
+		<module>wordcount-spark</module>
 	</modules>
 	<!-- TODO project name  -->
 	<name>novel</name>
