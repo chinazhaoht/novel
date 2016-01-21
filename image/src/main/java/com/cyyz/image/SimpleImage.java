@@ -1,3 +1,5 @@
+package com.cyyz.image;
+
 import java.io.OutputStream;
 
 /**

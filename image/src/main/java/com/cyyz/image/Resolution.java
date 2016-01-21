@@ -1,3 +1,5 @@
+package com.cyyz.image;
+
 /**
  * author: zhoaht
  * time:   2016/1/20
