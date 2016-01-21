@@ -20,7 +20,6 @@ import java.io.OutputStream;
  */
 public class ImageProcess implements SimpleImage {
 
-
     public static final Logger logger = LoggerFactory.getLogger(ImageProcess.class);
 
     private Image srcImage;

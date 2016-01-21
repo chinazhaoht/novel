@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="hadoop" />
         <module name="image" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hadoop" target="1.5" />
       <module name="image" target="1.5" />
       <module name="novel" target="1.5" />
     </bytecodeTargetLevel>
