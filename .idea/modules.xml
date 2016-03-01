@@ -4,9 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/image/image.iml" filepath="$PROJECT_DIR$/image/image.iml" />
       <module fileurl="file://$PROJECT_DIR$/novel.iml" filepath="$PROJECT_DIR$/novel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hadoop/wordcount-hadoop.iml" filepath="$PROJECT_DIR$/hadoop/wordcount-hadoop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wordcount-spark/wordcount-spark.iml" filepath="$PROJECT_DIR$/wordcount-spark/wordcount-spark.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wordcount-storm/wordcount-storm.iml" filepath="$PROJECT_DIR$/wordcount-storm/wordcount-storm.iml" />
     </modules>
   </component>
 </project>

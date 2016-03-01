@@ -24,9 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="hadoop" />
         <module name="image" />
-        <module name="wordcount-hadoop" />
-        <module name="wordcount-spark" />
-        <module name="wordcount-storm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
