@@ -3,6 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/resources/doi.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wordcount-spark" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wordcount-storm" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
