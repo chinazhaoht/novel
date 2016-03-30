@@ -37,7 +37,7 @@ public class WordCount implements IRichBolt {
             wordCount.put(sentence,1);
         }
         System.out.println(sentence+":"+wordCount.get(sentence));
-        collector.emit(new Values(sentence));
+        collector.emit(new Values(sentence,wordCount.get(sentence)));
 
         //collector.ack(tuple);
     }
@@ -49,7 +49,7 @@ public class WordCount implements IRichBolt {
 
     @Override
     public void declareOutputFields(OutputFieldsDeclarer outputFieldsDeclarer) {
-        outputFieldsDeclarer.declare(new Fields("word"));
+        outputFieldsDeclarer.declare(new Fields("word","count"));
     }
 
     @Override
