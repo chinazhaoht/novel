@@ -29,7 +29,8 @@ public class WordCount implements IRichBolt {
 
     @Override
     public void execute(Tuple tuple) {
-        String sentence = tuple.getString(0);
+        //String sentence = tuple.getString(0);
+        String sentence = (String)tuple.getValueByField("line");
         if(wordCount.containsKey(sentence)){
             wordCount.put(sentence,wordCount.get(sentence)+1);
         }else{

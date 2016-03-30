@@ -16,8 +16,8 @@ public class TopologyStarter {
     public static void main(String[] args) throws InterruptedException {
 
         TopologyBuilder builder = new TopologyBuilder();
-        builder.setSpout("word-reader",new ReadFile());
-        builder.setBolt("word-count",new WordCount()).shuffleGrouping("word-reader");
+        builder.setSpout("word-reader",new ReadFile(),3);
+        builder.setBolt("word-count",new WordCount(),4).shuffleGrouping("word-reader");
 
         Config conf = new Config();
         //conf.put("wordsFile",args[0]);
