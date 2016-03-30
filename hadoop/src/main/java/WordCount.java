@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Text;
+
 
 public class WordCount {
 
@@ -61,5 +63,4 @@ public class WordCount {
         JobClient.runJob(conf);
         System.exit(0);
     }
-
 }

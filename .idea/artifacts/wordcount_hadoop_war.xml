@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="wordcount-hadoop:war">
-    <output-path>$PROJECT_DIR$/hadoop/target</output-path>
-    <root id="archive" name="hadoop.war">
-      <element id="artifact" artifact-name="wordcount-hadoop:war exploded" />
-    </root>
-  </artifact>
-</component>

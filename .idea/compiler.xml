@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -24,17 +25,16 @@
         <processorPath useClasspath="true" />
         <module name="hadoop" />
         <module name="image" />
-        <module name="wordcount-hadoop" />
+        <module name="storm" />
         <module name="wordcount-spark" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
       <module name="hadoop" target="1.5" />
       <module name="image" target="1.5" />
       <module name="novel" target="1.5" />
-      <module name="wordcount-hadoop" target="1.5" />
+      <module name="storm" target="1.7" />
       <module name="wordcount-spark" target="1.5" />
-      <module name="wordcount-storm" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

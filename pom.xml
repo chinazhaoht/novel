@@ -10,8 +10,8 @@
 	<modules>
 		<module>image</module>
 		<module>hadoop</module>
-		<module>wordcount-storm</module>
 		<module>wordcount-spark</module>
+		<module>storm</module>
 	</modules>
 	<!-- TODO project name  -->
 	<name>novel</name>
@@ -27,7 +27,7 @@
 	<!--<repository>
 		<id>nexus</id>
 		<name>development</name>
-		<url>http://192.168.3.169:8081/nexus/content/groups/public</url>
+		<url>http://maven.oschina.net/content/groups/public/</url>
 		<layout>default</layout>
 		<releases>
 			<enabled>true</enabled>
@@ -36,7 +36,7 @@
 			<enabled>true</enabled>
 		</snapshots>
 	</repository>-->
-		<repository>
+	<!--	<repository>
 		<id>nexus</id>
 		<name>development</name>
 		<url>http://maven.oschina.net/content/groups/public/</url>
@@ -47,9 +47,14 @@
 		<snapshots>
 			<enabled>true</enabled>
 		</snapshots>
-	</repository>
-	</repositories>
+	</repository>-->
 
+		<!-- Repository where we can found the storm dependencies  -->
+		<repository>
+			<id>clojars.org</id>
+			<url>http://clojars.org/repo</url>
+		</repository>
+	</repositories>
 
 	<licenses>
 		<license>
@@ -61,13 +66,12 @@
 
 	<dependencies>
 		<!--  WICKET DEPENDENCIES -->
-		<!-- OPTIONAL 
+
 			<dependency>
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-extensions</artifactId>
 			<version>${wicket.version}</version>
 			</dependency>
-		-->
 
 		<!-- LOGGING DEPENDENCIES - LOG4J -->
 
@@ -91,7 +95,6 @@
 		 </dependency>
 
 		<!--  JETTY DEPENDENCIES FOR TESTING  -->
-
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty</artifactId>
@@ -134,7 +137,7 @@
 			<version>4.2.4.RELEASE</version>
 		</dependency>
 
-		<!--<dependency>
+		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.3.0</version>
@@ -143,7 +146,7 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.2.3</version>
-		</dependency>-->
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
@@ -172,11 +175,7 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.13</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.storm</groupId>
-			<artifactId>storm-core</artifactId>
-			<version>0.10.0</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
@@ -196,6 +195,12 @@
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-client</artifactId>
 			<version>2.7.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.13</version>
 		</dependency>
 	</dependencies>
 
